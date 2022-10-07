@@ -1,0 +1,40 @@
+body{
+    -template-columns: 1fr 1fr ;
+    grid-template-rows: 80px 50px auto 50px;
+    grid-template-areas:
+    "header header"
+    "nav nav "
+    "main aside"
+    "footer footer" 
+}
+
+header{
+    text-align: center;
+    font-size:2em;
+    font-family: Monospace;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    font-size:1.5em;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+img{
+    width: 600px;
+    padding-left: 100px;
+}
