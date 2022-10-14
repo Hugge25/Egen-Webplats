@@ -68,6 +68,22 @@ img{
     width: 600px;
 }
 
+#index img{
+    margin-left: 35%;
+}
+
+#index p{
+    margin-left: 6%;
+}
+
+#index2 p{
+    margin-left: 6%;
+}
+
+#index2 img{
+    margin-left: 55px;
+}
+
 tr, td{
     border: 1px solid black;
     width: 30%
