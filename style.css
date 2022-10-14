@@ -9,6 +9,20 @@ body{
     "footer footer" 
 }
 
+
+
+#index{
+    background-color: #f9fc9d;
+}
+
+#index2{
+    background-color: #ff7b47;
+}
+
+#index3{
+    background-color: #adffdd;
+}
+
 header{
     text-align: center;
     font-size:2em;
@@ -62,10 +76,16 @@ tr, td{
 tr, td{
     border-spacing: 0px;
     border-radius: 50px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 table{
     width: 30%
+}
+
+table{
+    margin: 80px;
 }
 
 
@@ -87,4 +107,16 @@ td:nth-child(3){
 td:nth-child(4){
     text-align: center;
     background-color: #faff78;
+}
+
+#index a:hover{
+    background-color: #f7e720;
+}
+
+#index2 a:hover{
+    background-color: red;
+}
+
+#index3 a:hover{
+    background-color: #20f7a8;
 }
