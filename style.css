@@ -92,6 +92,14 @@ nav a{
     padding-bottom: 5px;
 }
 
+#index a{
+    text-decoration: none;
+}
+
+#index section{
+    padding-left: 200px;
+}
+
 /* "Höst" css */
 
 #index2 p{
