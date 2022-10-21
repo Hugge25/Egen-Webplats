@@ -96,8 +96,10 @@ nav a{
     text-decoration: none;
 }
 
-#index section{
-    padding-left: 200px;
+#index footer{
+    padding-left: 400px;
+    padding-top: 60px;
+    font-size: 2em;
 }
 
 /* "Höst" css */
