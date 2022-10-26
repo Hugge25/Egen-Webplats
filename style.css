@@ -1,5 +1,4 @@
-/* Grid layout */
-
+/*Koden under markerar hur grid layouten ska se ut, och hur den ska vara uppbyggd*/
 body{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -10,7 +9,7 @@ body{
     "main aside"
     "footer aside" 
 }
-
+/*Den här koden gör så att jag får texten centrerad, en font på 2em, monospace font och en grid area som är header*/
 header{
     text-align: center;
     font-size:2em;
@@ -18,15 +17,18 @@ header{
     grid-area: header;
 }
 
+/*Koden under gör så att min main får en grid area som heter main och att min main blir ett block*/
 main{
     grid-area: main;
     display: block;
 }
 
+/*koden under gör bara så att min footer får footer som grid area*/
 footer{
     grid-area: footer;
 }
 
+/*Nav koden gör så att min nav får nav som grid area och padding-top gör så att den flyttas ner lite så att den inte kommer för nära headern*/
 nav{
     grid-area: nav;
     padding-top: 16px;
@@ -46,141 +48,149 @@ nav{
     background-color: #adffdd;
 }
 
-/* nav css*/
-
+/*Den här goden gör så att den har en grid display och "grid-template-columns: 1fr 1fr 1fr;" gör så att jag får mina navs uppdelade i 
+tre stycken grid templates, sen har jag också en margin på 0 för att få mina nav att inte sitta ihop för tät*/
 nav>ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
 }
 
+
 nav li{
-    list-style-type: none;
-    text-align: center;
-    font-size:1.5em;
+    list-style-type: none; /*Gör så att vår mav lista inte har någon style*/
+    text-align: center; /*Gör så att texten är centrerad*/
+    font-size:1.5em; /*Gör textens font size till 1.5em*/
 }
 
 nav a{
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 30px;
-    border-width: 2px;
-    display:inline-block;
-    width: 95%;
+    text-decoration: none; /*Tar bort all dekoration på texten*/
+    border: 1px solid black; /*Berättar hur bordern ska se ut, 1px i tjocklek, soild alltså hel och den ska vara svart*/
+    border-radius: 30px; /*Bordern radie ska vara 30px så att vår border ser snyggare ut och får runda kanter*/
+    border-width: 2px; /*Besätmmer bordern bredd*/
+    display:inline-block; /*Gör den så display blir inline-block*/
+    width: 95%; /*Gör så att nav a får en bredd på 95%*/
 }
 
 /* "Teknikum" css */
 
 #index p{
-    margin-left: 6%;
+    margin-left: 6%; /*Skapar en margin åt vänster på 6%, jag gör detta för att p inte ska vara för nära kanten av hemsidan*/
 }
 
 #index img{
-    width: 800px;
+    width: 800px; /*Gör så att bilden får en bredd på 800px*/
 }
 
 #index div{
-    padding-left: 10%;
+    padding-left: 10%; /*Den här koden gör så att min div har en padding på vänster sida av den med 10%, i min div har jag min bild på teknikum.
+                                 Jag gjorde detta för jag tyckte att bilden var för nära p texten till vänster*/
 }
 
 #index aside p{
-    background-color: #f8fd69;
-    border-style: dashed;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: #f8fd69; /*Ger min aside p en bakgrundsfärg*/
+    border-style: dashed; /*Gör så att mim border som är runt aside p är dashed*/
+    border-radius: 20px; /*Ger bordern runda kanter med en radie på 20px*/
+    padding-left: 20px; /*Lägger till 20px padding  på vänster sidan så den åker mot höger */
+    padding-top: 5px; /*Samma här fast det är 5px och den åker ner för det är padding top*/
+    padding-bottom: 5px; /*Samma som raden ovan för fast tvärtom*/
 }
 
-#index footer{
-    padding-left: 400px;
-    padding-top: 60px;
-    font-size: 2em;
+#index footer li{
+    list-style-type: "\1F44D"; /*Gör så att min lista har en tumme up emoji som list style type*/
+}
+
+#index footer li{
+    padding-left: 10px; /*Flyttar min footer lista ner*/
+}
+
+#index footer p{
+    padding-top: 30px; /*footer p flyttas ner*/
 }
 
 /* "Höst" css */
 
 #index2 p{
-    margin-left: 6%;
+    margin-left: 6%; /*Gör så att min text hamnar mer åt höger*/
 }
 
 #index2 img{
-    margin-left: 20px;
-    width: 920px;
-    border: 3px solid;
-    border-radius: 50px;
-    margin-top: 116px;
+    margin-left: 20px; /*Gör så att bilden åker mot höger*/
+    width: 920px; /*Ger min bild en bredd på 920px*/
+    border: 3px solid; /*Ger bilden en border som är 3px tjock och är solid*/
+    border-radius: 50px; /*Ger bordern en radie så kanterna blir runda*/
+    margin-top: 116px; /*Gör så att bilden flyttas ner och hamnar längs texten*/
 }
 
 #index2 aside{
-    padding-top: 12%;
+    padding-top: 12%; /*Flyttar ner asiden*/
 }
 
 #index2 div{
-    padding-right: 30px;
-    border-style: solid;
-    border-radius: 50px;
-    background-color: #fc7412;
+    padding-right: 10px; /*Gör så att texten är lika stor som bilden*/
+    border-style: solid; /*Gör så att aside texten får en border*/
+    border-radius: 50px; /*Gör så att den får en radie till bordern som är lika stor som bildens radie*/
+    background-color: #fc7412; /*Ger texten en bakgrundsfärg*/
 }
 
 /* "Frukt tabell" css */
 
 #index3 img{
-    padding-left: 10%;
-    padding-top: 10%;
+    padding-left: 10%; /*Gör så att bilden flyttas till höger*/
+    padding-top: 10%; /*Bilden flyttas ner*/
 }
 
 #index3 main{
-    width: 50%
+    width: 50% /*Ger ut en bredd på main vilket gör tabeln breddare*/
 }
 
 #index3 main{
-    margin: 280px;
+    margin: 280px; /*Gör så att tabellen hamnar mitt i mainen*/
 }
 
 /* Detta är min tabell kod */
 
 tr, td{
-    border: 2px solid black;
-    width: 30%
+    border: 2px solid black; /*Skapar en border runt mina tr och td och gör den svart*/
+    width: 30% /*Ger alla td och tr en bredd på 30%*/
 }
 
 tr, td{
-    border-spacing: 0px;
-    border-radius: 50px;
-    padding-top:10px;
-    padding-bottom:10px;
+    border-spacing: 0px; /*Tar bort border spacing*/
+    border-radius: 50px; /*Lägger till border radie på alla tr och td som är 50px*/
+    padding-top:10px; /*    Den här raden och     */
+    padding-bottom:10px;  /* den här raden tillsammans hör så att texten inte är så nära kanterna av bordern*/
 }
 
 /* Här använder jag mig av zebra striping i min tabell */
 
 td:nth-child(1){
-    text-align: left;
-    background-color: pink;
-    padding-left: 10px;
+    text-align: left; /*Gör så att texten är åt vänster*/
+    background-color: pink; /*Går så att första kolumnen är rosa*/
+    padding-left: 10px; /*Gör så att texten inte hamnar för nära bordern*/
 }
 
 td:nth-child(2){
-    text-align: center;
-    background-color: #d12e2e;
+    text-align: center; /*Gör så att andra kolumnes text är centrerad*/
+    background-color: #d12e2e; /*och ger en röd bakgrundsfärg*/
 }
 
 td:nth-child(3){
-    text-align: center;
-    background-color: lightgreen;
+    text-align: center; /*Gör så att tredje kolumnes text är också centrerad*/
+    background-color: lightgreen; /*och ger en ljusgrön bakgrundsfärg*/
 }
 
 td:nth-child(4){
-    text-align: center;
-    background-color: #faff78;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center; /*Gör så att den fjärde kolumnens text är centrerad*/
+    background-color: #faff78; /* och ger den gul bakgrundfärg*/
+    padding-left: 10px; /* Den här*/
+    padding-right: 10px; /*och den här koden gör så att texten inte hamnar för nära bordern*/
 }
 
-/* Den här koden under gör att mina nav får en annan färg när jag byter sida */
+/* Den här koden under gör att mina nav a:hover får en annan färg när jag byter sida */
 
 #index nav a:hover{
-    background-color: #f7e720;
+    background-color: #f7e720; 
 }
 
 #index2 nav a:hover{
