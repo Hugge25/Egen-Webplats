@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang ="sv">
-<head>
-    <meta charset="utf-8">
-    <title>Hugo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="index">
+<!DOCTYPE html> <!-- Berättar vilken html version jag använder. -->
+<html lang ="sv"> <!-- Här använder jag lang för att förklara vilket språk hemsidan är skriven i, html är sidans rotelement. -->
+<head> <!-- Innehåller metadata. Kommer inte visas på hemsidan, head är ett osynligt element som är varken block eller inline. -->
+    <meta charset="utf-8"> <!-- Används för att översätta koden till det valfritt språk. Annars hade sidan varit byggd på ASCII -->
+    <title>Hugo</title> <!--Bestämmer titeln på hemsidan.-->
+    <link rel="stylesheet" href="style.css"> <!--(href="style.css") Används för att länka sidan till min css sida. (rel="stylesheet") Har vi för att markera sidan som en stylesheet för annars så kommer inte css koden att fungera-->
+</head> 
+<body id="index"> <!-- Jag måste ge alla mina sidor ett id så jag kan redigera alla mina sidor på samma css sida. -->
 
-    <header> <!--Min header-->
+    <header> <!--Min rubrik-->
         <h1>Hugo Paulsson TE21C</h1>
     </header>
 
     <nav> <!--Det här min globala meny-->
         <ul>
-            <li><a href="index.html">Teknikum</a></li>
+            <li><a href="index.html">Teknikum</a></li> <!-- Här länkar jag alla li till mina olika sidor -->
             <li><a href="index2.html">Höst</a></li>
             <li><a href="index3.html">Frukt tabell</a></li>
         </ul>
@@ -53,22 +53,22 @@
     </main>     
 
     <aside>
-        <div>
+        <div> <!-- Jag anävnder div för att lättare kunna ändra plats på bilden-->
             <a href="https://teknikum.se/" title="Teknikums hemsida"><img src="teknikum.jpg"></a>   
         </div><!-- koden över länkar bilden.   Koden här ger bilden en titel.  Och här är min källa till bilden-->
     </aside>    
 
     
     <footer>
-        <p>3 andledingar att gå på Teknikum</p>
-        <ul>
+        <p>3 anledningar att gå på Teknikum</p>
+        <ul> <!-- Min lista om anledningar att gå på Teknikum-->
             <li>Roligt folk</li>
             <li>Bra lärare</li>
             <li>Perfekt för data nördar</li>
         </ul>
     </footer>
 
-    <aside class = "sidfot">
+    <aside class = "sidfot"> <!-- Jag var tvungen att classa ge den här för annars hade css koden påverkat både min bild aside och min p aside-->
         <p>
             Nullam nisi ex, pharetra ut arcu nec, sodales viverra metus. Sed turpis leo, tempor ut mattis at, sodales vel lorem. Proin nulla neque, malesuada vel lacus
             ac, convallis tincidunt arcu. Duis non mollis velit. Etiam fermentum neque ac turpis aliquam, quis mollis diam consequat. Fusce vel ex sem. Praesent condimentum

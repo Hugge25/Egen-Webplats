@@ -1,9 +1,9 @@
 /*Koden under markerar hur grid layouten ska se ut, och hur den ska vara uppbyggd*/
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ; /*Visar att hemsidan är uppbyggd i två grid kolumner.*/
     grid-template-rows: 80px 50px auto 50px;
-    grid-template-areas:
+    grid-template-areas: /*Berättar vad alla delar av sidan heter och hur den ska vara uppbyggd.*/
     "header header"
     "nav nav "
     "main aside"
@@ -34,6 +34,8 @@ nav{
     padding-top: 16px;
 }
 
+
+
 /* Mina bakgrundsfärger */
 
 #index{
@@ -56,7 +58,6 @@ nav>ul{
     margin: 0;
 }
 
-
 nav li{
     list-style-type: none; /*Gör så att vår mav lista inte har någon style*/
     text-align: center; /*Gör så att texten är centrerad*/
@@ -71,6 +72,8 @@ nav a{
     display:inline-block; /*Gör den så display blir inline-block*/
     width: 95%; /*Gör så att nav a får en bredd på 95%*/
 }
+
+
 
 /* "Teknikum" css */
 
@@ -101,12 +104,16 @@ nav a{
 }
 
 #index footer li{
-    padding-left: 10px; /*Flyttar min footer lista ner*/
+    padding-left: 15px; /*Flyttar min footer lista till höger*/
 }
 
 #index footer p{
     padding-top: 30px; /*footer p flyttas ner*/
+    font-size: 1.5em; /*Ändrar storleken på texten*/
+    font-family: Arial ; /*Ändrar textens font family*/
 }
+
+
 
 /* "Höst" css */
 
@@ -133,6 +140,8 @@ nav a{
     background-color: #fc7412; /*Ger texten en bakgrundsfärg*/
 }
 
+
+
 /* "Frukt tabell" css */
 
 #index3 img{
@@ -148,6 +157,8 @@ nav a{
     margin: 280px; /*Gör så att tabellen hamnar mitt i mainen*/
 }
 
+
+
 /* Detta är min tabell kod */
 
 tr, td{
@@ -161,6 +172,8 @@ tr, td{
     padding-top:10px; /*    Den här raden och     */
     padding-bottom:10px;  /* den här raden tillsammans hör så att texten inte är så nära kanterna av bordern*/
 }
+
+
 
 /* Här använder jag mig av zebra striping i min tabell */
 
@@ -186,6 +199,8 @@ td:nth-child(4){
     padding-left: 10px; /* Den här*/
     padding-right: 10px; /*och den här koden gör så att texten inte hamnar för nära bordern*/
 }
+
+
 
 /* Den här koden under gör att mina nav a:hover får en annan färg när jag byter sida */
 
